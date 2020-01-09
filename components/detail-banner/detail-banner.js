@@ -8,7 +8,8 @@ Component({
     result:null,
     dotsArray:['02卧','公共卫生间','起居室','厨房'],
     imgList:[],
-    activeList:[]
+    activeList:[],
+    ispopUpWindowShow:false
   },
   properties: {
 
@@ -17,7 +18,7 @@ Component({
   lifetimes:{
     attached(){
       wx.request({
-        url: 'https://m.ziroom.com/wap/detail/room.json?city_code=110000&id=62757127',
+        url: 'https://m.ziroom.com/wap/detail/room.json?city_code=110000&id=62780533',
         success:res=>{
           let list = res.data.data.space.map((value)=>{
             return value.photos_big
@@ -52,6 +53,16 @@ Component({
         }
       }
       return newA 
-   }
+   },
+   clickPayStyle(){
+     this.setData({
+      ispopUpWindowShow:true
+     })
+   },
+   close() {
+    this.setData({
+      ispopUpWindowShow: false
+    })
+  }
   }
 })

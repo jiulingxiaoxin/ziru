@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "components/popUpWindow/popUpWindow"
   ],
   "window": {
    
