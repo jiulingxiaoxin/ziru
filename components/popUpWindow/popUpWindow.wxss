@@ -1,0 +1,30 @@
+/* components/popUpWindow/popUpWindow.wxss */
+.pop-up-box{
+  position: absolute;
+  left: 0;top: 0;
+  background: #fff;
+  width: 100%;
+  animation: upMove 0.5s;
+}
+@keyframes upMove{
+  from{
+    top:3000rpx
+  }
+  to{
+    top:0
+  }
+}
+.pop-up-head{
+  width: 100%;
+  height: 88rpx;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+.pop-up-container{
+  padding:88rpx 36rpx 0;
+}
+.pop-up-close{
+  margin: 0 24rpx;
+}

@@ -1,0 +1,10 @@
+<!--从底部弹出的弹窗-->
+<view class="pop-up-box">
+  <view class="pop-up-head">
+    <icon class="pop-up-close" type="cancel" size="23" color="#444" bindtap="close"></icon>
+  </view>
+  <view class="pop-up-container">
+    <slot></slot>
+  </view>
+</view>
+
